@@ -27,15 +27,10 @@ class GameViewModel : ViewModel() {
                     gameResult = gameService.getGameResult(
                         userChoice = state.userChoice,
                         computerChoice = computerChoice
-                    ),
-                    destination = Destination.RESULT
+                    )
                 )
             }
         }
-    }
-
-    fun onReplay() {
-        _gameUiState.value = GameUiState()
     }
 
     fun onUserChoiceChange(newUserChoice: Choice) {
