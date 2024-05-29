@@ -35,7 +35,9 @@ class GameViewModel : ViewModel() {
     }
 
     fun onReplay() {
-        _gameUiState.value = GameUiState()
+        _gameUiState.update { state ->
+            state.copy(destination = Destination.PLAY)
+        }
     }
 
     fun onUserChoiceChange(newUserChoice: Choice) {
