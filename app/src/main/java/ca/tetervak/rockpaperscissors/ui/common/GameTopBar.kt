@@ -1,7 +1,7 @@
 package ca.tetervak.rockpaperscissors.ui.common
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.ArrowBack
+import androidx.compose.material.icons.automirrored.outlined.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -35,7 +35,7 @@ fun GameTopBar(
         if (onNavigateBack != null) {
             IconButton(onClick = onNavigateBack) {
                 Icon(
-                    imageVector = Icons.Outlined.ArrowBack,
+                    imageVector = Icons.AutoMirrored.Outlined.ArrowBack,
                     contentDescription = stringResource(id = R.string.replay),
                     tint = MaterialTheme.colorScheme.primary
                 )
