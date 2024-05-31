@@ -96,7 +96,7 @@ fun ResultScreen(
                         color = Color.DarkGray
                     )
                 )
-                Text("versus",  fontSize = 20.sp,)
+                Text("versus",  fontSize = 20.sp)
                 ChoiceToImage(
                     choice = userChoice,
                     modifier = Modifier.border(
