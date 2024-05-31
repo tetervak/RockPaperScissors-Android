@@ -104,7 +104,6 @@ fun PlayScreen(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SelectOption(choiceOption: Choice, selected: Boolean, onClick: () -> Unit) {
     ElevatedCard(
